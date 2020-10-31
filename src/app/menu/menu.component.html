@@ -1,0 +1,27 @@
+<div class="nav-wrapper position-relative mx-5 mb-5">
+  <ul class="nav nav-pills rounded nav-fill flex-column flex-md-row">
+    <li class="nav-item">
+      <a class="nav-link mb-sm-3 mb-md-0" data-toggle="tab" [routerLink]="['/']"
+        >Home</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link mb-sm-3 mb-md-0"
+        data-toggle="tab"
+        routerLinkActive="active"
+        [routerLink]="['/new']"
+        >New Post</a
+      >
+    </li>
+    <li class="nav-item">
+        <a
+          class="nav-link mb-sm-3 mb-md-0 text-danger"
+          data-toggle="tab"
+          (click)="reset()"
+          >Reset</a
+        >
+      </li>
+  </ul>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,28 @@
+<div class="row mx-4">
+  <div class="col-12 col-md-6 mb-4" *ngFor="let post of posts">
+    <div class="card bg-primary shadow-soft text-center border-light">
+      <div class="card-header">
+        <span class="card-text small"
+          ><span class="far fa-calendar-alt mr-2"></span>{{ post.createdat | date }}</span
+        >
+      </div>
+      <div class="card-body">
+        <h3 class="h5 card-title">{{ post.title }}</h3>
+        <p class="card-text">
+          {{ post.body }}
+        </p>
+      </div>
+      <div class="card-footer">
+        <a
+          href="#"
+          data-toggle="tooltip"
+          data-placement="top"
+          title=""
+          data-original-title="23k followers"
+        >
+          {{ post.author}}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
